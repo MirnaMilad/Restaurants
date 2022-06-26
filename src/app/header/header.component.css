@@ -1,0 +1,202 @@
+/* Styling the header */
+nav {
+  margin: 0px 75px;
+}
+
+/* Styling the first navbar */
+
+div.first {
+  background-color: rgb(1, 183, 242);
+
+}
+
+div.first a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(1, 183, 242);
+  font-size: 13px;
+
+}
+div.first a.nav-link {
+  font-size: 12px;
+  font-family: Font Awesome\ 5 Brands;
+
+}
+
+div.first a.dropdown-toggle {
+  font-size: 15px;
+}
+
+div.first div.authentication ul {
+  display: flex;
+  flex-direction: row;
+}
+
+div.first div.authentication ul li.auth a {
+  padding: 0px 10px;
+}
+
+div.first div.authentication ul li.dropdown svg {
+  margin-left: 10px;
+}
+
+/* Styling the second navbar */
+
+div.second {
+  font-size: 14px;
+  background-color: white;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+div.second a.navbar-brand {
+  color: rgb(1, 183, 242);
+  background-color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div.second ul.nav.navbar-nav.navbar-right {
+  text-align: right;
+
+}
+
+div.second .navbar-expand-md ul {
+  margin-left: auto;
+}
+
+.navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+
+
+div.second .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+div.second button.navbar-toggler {
+  border: none;
+}
+
+div.second svg {
+  width: 50px;
+  height: 50px
+}
+
+div.second nav.navbar {
+  padding-top: 0px;
+  padding-bottom: 0%;
+
+}
+
+
+
+
+div.second li a {
+  color: rgb(131, 131, 131);
+  font-size: 15px;
+  background-color: white;
+  margin-left: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+div.second a.main:hover {
+  color: rgb(1, 183, 242);
+  background-color: white;
+}
+
+/* Styling the enquery now button */
+button.special {
+  color: rgb(1, 183, 242);
+  background-color: white;
+  border: 0.5px solid rgb(1, 183, 242);
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 50px;
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: all .5s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+
+button.special:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(24, 172, 205);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+}
+
+
+button.special:hover {
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+
+
+
+
+button.special:hover:before {
+  transform: scaleX(1);
+  border-radius: 30px;
+}
+
+button.special:link:visited:active {
+  border-color: rgb(1, 183, 242);
+}
+
+/* The Phone screen */
+@media screen and (max-width:767px) {
+  div.first div.collapse {
+    display: block;
+  }
+
+  div.first ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  div.first a.nav-link {
+    padding: 4px 10px;
+  }
+
+  nav.navbar.navbar-expand-lg {
+    justify-content: center;
+  }
+
+  div.second li a {
+    padding-left: 0;
+    margin-left: 0;
+
+  }
+
+  nav {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,10 @@
+<!-- loading the page -->
+<div *ngIf="isLoading" style="text-align: center">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+<div *ngIf="!isLoading">
+  <div class="container-fluid">
+    <!-- Displaying the image of the spring rolls -->
+    <img [src]="url + home.categories[3].photo" />
+  </div>
+</div>

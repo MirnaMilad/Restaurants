@@ -1,0 +1,10 @@
+<!-- loading the page -->
+<div *ngIf="isLoading" style="text-align: center;">
+    <app-loading-spinner></app-loading-spinner>
+    </div>
+<div *ngIf="!isLoading">
+<div class="container-fluid">
+    <!-- displaying the restaurant image-->
+    <img [src]="url+home.categories[0].photo">
+</div>
+</div>
